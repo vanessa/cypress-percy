@@ -8,7 +8,6 @@ describe("My Application", () => {
     cy.get("[data-test=button]")
       .should("have.class", "btn")
       .and("have.text", "Click");
-    cy.percySnapshot();
   });
 
   it("has green button on iPhone 6", () => {
