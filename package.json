@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server/server.js",
     "cypress:run": "cypress run",
+    "test": "npm run start & npm run cypress:run",
     "cypress:run:percy": "percy exec -- cypress run"
   },
   "author": "",

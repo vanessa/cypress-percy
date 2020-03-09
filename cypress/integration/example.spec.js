@@ -5,7 +5,9 @@ describe("My Application", () => {
 
   it("renders title and button", () => {
     cy.get("[data-test=title]").should("have.text", "Hello, world!");
-    cy.get("[data-test=button]").should("have.class", "btn");
+    cy.get("[data-test=button]")
+      .should("have.class", "btn")
+      .and("have.text", "Click");
     cy.percySnapshot();
   });
 
