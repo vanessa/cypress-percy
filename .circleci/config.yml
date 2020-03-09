@@ -1,0 +1,10 @@
+version: 2.1
+orbs:
+  cypress: cypress-io/cypress@1.16.1
+workflows:
+  build:
+    jobs:
+      - cypress/run:
+          command: npm run cypress:run:percy
+          start: npm start
+          store_artifacts: true

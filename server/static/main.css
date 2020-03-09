@@ -1,0 +1,36 @@
+body {
+  background: #fafafa;
+  font-family: "Roboto";
+}
+
+h1 {
+  color: navy;
+  margin: 0 0 15px;
+}
+
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  background: orange;
+  border: unset;
+  border-radius: 5px;
+  padding: 5px 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.container {
+  background: #fff;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  text-align: center;
+  margin: 50px auto;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+@media (max-width: 375px) {
+  .btn {
+    background: greenyellow;
+  }
+}

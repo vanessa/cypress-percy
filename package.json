@@ -1,0 +1,20 @@
+{
+  "name": "percy-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "cypress:run": "cypress run",
+    "cypress:run:percy": "percy exec -- cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@percy/cypress": "^2.3.1",
+    "cypress": "^4.1.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
